@@ -1,8 +1,6 @@
 package HashMap;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 enum Students {
     Naman,Vaidehi,Neha,Megha,Dev
@@ -15,14 +13,20 @@ public class HashMapExp {
         for (int i = 0; i <Students.values().length ; i++) {
             map.put(i,Students.values()[i]);
         }
-//        Set<Integer> keys = map.keySet();
-//        for (int it:keys){
-//            System.out.println(map.get(it));
-//        }
-//
-//        for (Map.Entry<Integer, Students> it:map.entrySet()){
-//            it.setValue(Students.valueOf(it.getValue().toString().toUpperCase()));
-//        }
+
+
+        Map<Student,Integer> data = new HashMap<>();
+        List<String>names = Arrays.asList("Naman","Vaidehi","Neha","Megha","Dev");
+        List<Integer>id = Arrays.asList(2,5,7,9,6);
+        List<Integer>marks = Arrays.asList(440,500,300,600,800);
+
+        for (int i = 0; i <names.size() ; i++) {
+            Student student = new Student(names.get(i),id.get(i));
+            data.put(student,marks.get(i));
+        }
+
+        System.out.println(data);
+
 
 
 

@@ -7,7 +7,7 @@ public class LinkedListDemo {
     public static void main(String[] args) {
 
         Queue<Integer> linkedList = new LinkedList<>();
-        linkedList.add(4);s
+        linkedList.add(4);
         linkedList.add(5);
         linkedList.add(8);
         System.out.println(linkedList);
